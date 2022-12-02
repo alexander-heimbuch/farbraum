@@ -1,4 +1,4 @@
-import { ColorTranslator } from 'colortranslator';
+import { ColorTranslator } from "colortranslator";
 import { Model } from "../types";
 
 const model: Model = {
@@ -10,7 +10,7 @@ const model: Model = {
       return null;
     }
 
-    return new ColorTranslator(input)
+    return new ColorTranslator(input);
   },
 
   convert: (input: ColorTranslator): string | null => {

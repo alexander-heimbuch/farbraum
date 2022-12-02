@@ -1,32 +1,38 @@
-import { ColorTranslator } from 'colortranslator';
+import { ColorTranslator } from "colortranslator";
 import { transform } from "../models";
 
-export const colorOperationWithModifier = (operation: (input: ColorTranslator, modifier: number) => ColorTranslator) => (input: string, modifier: number): string | null => {
-  const color = transform(input);
+export const colorOperationWithModifier =
+  (operation: (input: ColorTranslator, modifier: number) => ColorTranslator) =>
+  (input: string, modifier: number): string | null => {
+    const color = transform(input);
 
-  if (!color) {
-    return null
-  }
+    if (!color) {
+      return null;
+    }
 
-  return color.model.convert(operation(color.value, modifier));
-}
+    return color.model.convert(operation(color.value, modifier));
+  };
 
-export const colorOperation = (operation: (input: ColorTranslator) => ColorTranslator) => (input: string): string | null => {
-  const color = transform(input);
+export const colorOperation =
+  (operation: (input: ColorTranslator) => ColorTranslator) =>
+  (input: string): string | null => {
+    const color = transform(input);
 
-  if (!color) {
-    return null
-  }
+    if (!color) {
+      return null;
+    }
 
-  return color.model.convert(operation(color.value));
-}
+    return color.model.convert(operation(color.value));
+  };
 
-export const colorProperty = <T>(operation: (input: ColorTranslator) => T) => (input: string): T | null => {
-  const color = transform(input);
+export const colorProperty =
+  <T>(operation: (input: ColorTranslator) => T) =>
+  (input: string): T | null => {
+    const color = transform(input);
 
-  if (!color) {
-    return null
-  }
+    if (!color) {
+      return null;
+    }
 
-  return operation(color.value);
-}
+    return operation(color.value);
+  };

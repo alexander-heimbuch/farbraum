@@ -1,5 +1,5 @@
-import colors from 'color-name';
-import { ColorTranslator } from 'colortranslator';
+import colors from "color-name";
+import { ColorTranslator } from "colortranslator";
 import { Model } from "../types";
 
 const model: Model = {
@@ -10,7 +10,7 @@ const model: Model = {
 
   convert: (input: ColorTranslator): string | null => {
     return input.RGBA;
-  }
+  },
 };
 
 export default model;

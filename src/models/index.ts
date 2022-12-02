@@ -1,4 +1,4 @@
-import { ColorTranslator } from 'colortranslator';
+import { ColorTranslator } from "colortranslator";
 import { Model } from "../types";
 import hex from "./hex";
 import names from "./names";

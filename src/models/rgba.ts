@@ -1,4 +1,4 @@
-import { ColorTranslator } from 'colortranslator';
+import { ColorTranslator } from "colortranslator";
 import { Model } from "../types";
 
 const model: Model = {

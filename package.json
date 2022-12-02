@@ -16,7 +16,8 @@
   "scripts": {
     "test": "vitest",
     "build": "vite build",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier -w {src,tests}/**/*.ts"
   },
   "dependencies": {
     "color-name": "2.0.0",

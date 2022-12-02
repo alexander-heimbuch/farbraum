@@ -1,6 +1,5 @@
 import { Model } from "../types";
-import { ColorTranslator } from 'colortranslator';
-
+import { ColorTranslator } from "colortranslator";
 
 const model: Model = {
   match: (input: string): boolean => input.startsWith("#"),
@@ -10,7 +9,7 @@ const model: Model = {
   convert: (input: ColorTranslator): string => {
     if (input.A < 1) {
       return input.HEXA;
-    } 
+    }
 
     return input.HEX;
   },
