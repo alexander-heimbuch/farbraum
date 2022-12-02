@@ -15,7 +15,7 @@
   },
   "types": "./dist/farbraum.d.ts",
   "scripts": {
-    "test": "vitest",
+    "test": "vitest run",
     "build": "vite build",
     "prepare": "husky install",
     "format": "prettier -w {src,tests}/**/*.ts",
