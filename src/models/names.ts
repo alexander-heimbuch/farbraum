@@ -1,3 +1,4 @@
+// @ts-ignore
 import colors from "color-name";
 import { ColorTranslator } from "colortranslator";
 import { Model } from "../types";
