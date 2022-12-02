@@ -1,0 +1,33 @@
+{
+  "name": "farbraum",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/farbraum.umd.js",
+  "module": "./dist/farbraum.js",
+  "exports": {
+    ".": {
+      "import": "./dist/farbraum.js",
+      "require": "./dist/farbraum.umd.cjs"
+    }
+  },
+  "scripts": {
+    "test": "vitest",
+    "build": "vite build",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "color-name": "2.0.0",
+    "colortranslator": "1.9.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.0",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.3",
+    "husky": "^8.0.0"
+  }
+}
