@@ -1,7 +1,17 @@
 {
   "name": "farbraum",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
+  "keywords": [
+    "color",
+    "color operations",
+    "fade",
+    "saturate",
+    "darken",
+    "lighten",
+    "grayscale",
+    "esm"
+  ],
   "files": [
     "dist"
   ],
