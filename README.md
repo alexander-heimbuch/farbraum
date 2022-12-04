@@ -1,6 +1,6 @@
 # Farbraum
 
-> A esm library to manipulate a in a color space
+> A esm library to manipulate a color in a color space
 
 ## Installation
 
