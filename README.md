@@ -8,7 +8,7 @@
 
 ## Usage
 
-Farbraum is a simple library that can be used to modify colors within a given color space. It doesn't have the ability to convert colors between models or provides andy advanced color operations like color mixing or color harmony.
+Farbraum is a simple library that can be used to modify colors within a given color space. It doesn't have the ability to convert colors between models or provides any advanced color operations like color mixing or color harmony.
 
 ## API
 

@@ -20,7 +20,8 @@
   "exports": {
     ".": {
       "import": "./dist/farbraum.js",
-      "require": "./dist/farbraum.umd.cjs"
+      "require": "./dist/farbraum.umd.cjs",
+      "types": "./dist/farbraum.d.ts"
     }
   },
   "types": "./dist/farbraum.d.ts",
