@@ -21,10 +21,10 @@
     ".": {
       "import": "./dist/farbraum.js",
       "require": "./dist/farbraum.umd.cjs",
-      "types": "./dist/farbraum.d.ts"
+      "types": "./dist/main.d.ts"
     }
   },
-  "types": "./dist/farbraum.d.ts",
+  "types": "./dist/main.d.ts",
   "scripts": {
     "test": "vitest run",
     "build": "vite build",
