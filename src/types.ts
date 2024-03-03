@@ -1,7 +1,9 @@
 import { ColorTranslator } from 'colortranslator';
 
+export type ColorInput = string | number[];
+
 export interface Model {
-    match: (input: string) => boolean;
-    parse: (input: string) => ColorTranslator | null;
-    convert: (input: ColorTranslator) => string | null;
+  match: (input: ColorInput) => boolean;
+  parse: (input: ColorInput) => ColorTranslator | null;
+  convert: (input: ColorTranslator) => ColorInput | null;
 }

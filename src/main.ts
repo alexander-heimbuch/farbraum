@@ -1,6 +1,5 @@
-import * as operations from "./operations";
-import { colorOperation, colorOperationWithModifier, colorProperty } from "./helper/input";
-
+import * as operations from './operations';
+import { colorOperation, colorOperationWithModifier, colorProperty } from './helper/input';
 
 export const darken = colorOperationWithModifier(operations.darken);
 export const desaturate = colorOperationWithModifier(operations.desaturate);

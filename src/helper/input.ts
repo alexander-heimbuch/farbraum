@@ -1,9 +1,10 @@
-import { ColorTranslator } from "colortranslator";
-import { transform } from "../models";
+import { ColorTranslator } from 'colortranslator';
+import { transform } from '../models';
+import { ColorInput } from '../types';
 
 export const colorOperationWithModifier =
   (operation: (input: ColorTranslator, modifier: number) => ColorTranslator) =>
-  (input: string, modifier: number): string | null => {
+  (input: ColorInput, modifier: number): ColorInput | null => {
     const color = transform(input);
 
     if (!color) {
@@ -15,7 +16,7 @@ export const colorOperationWithModifier =
 
 export const colorOperation =
   (operation: (input: ColorTranslator) => ColorTranslator) =>
-  (input: string): string | null => {
+  (input: ColorInput): ColorInput | null => {
     const color = transform(input);
 
     if (!color) {

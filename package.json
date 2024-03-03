@@ -27,6 +27,7 @@
   "types": "./dist/main.d.ts",
   "scripts": {
     "test": "vitest run",
+    "test:dev": "vitest",
     "build": "vite build",
     "prepare": "husky install",
     "format": "prettier -w {src,tests}/**/*.ts",

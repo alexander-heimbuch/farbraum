@@ -1,18 +1,22 @@
-import { Model } from "../types";
-import { ColorTranslator } from "colortranslator";
+import { ColorInput, Model } from '../types';
+import { ColorTranslator } from 'colortranslator';
 
 const model: Model = {
-  match: (input: string): boolean => input.startsWith("#"),
-  parse: (input: string): ColorTranslator => {
+  match: (input: ColorInput): boolean => typeof input === 'string' && input.startsWith('#'),
+  parse: (input: ColorInput): ColorTranslator | null => {
+    if (!input || typeof input !== 'string') {
+      return null;
+    }
+
     return new ColorTranslator(input);
   },
-  convert: (input: ColorTranslator): string => {
+  convert: (input: ColorTranslator): ColorInput | null => {
     if (input.A < 1) {
       return input.HEXA;
     }
 
     return input.HEX;
-  },
+  }
 };
 
 export default model;

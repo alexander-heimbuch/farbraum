@@ -17,85 +17,86 @@ Farbraum is a simple library that can be used to modify colors within a given co
 - hex(a)
 - color names
 - rgb(a)
+- rgb array
 
 ### Operations
 
 #### darken
 
 ```typescript
-import { darken } from "farbraum";
+import { darken } from 'farbraum';
 
-darken("#2a9d8f", 0.3 /* 0 - 1 */); // #1D6E65
+darken('#2a9d8f', 0.3 /* 0 - 1 */); // #1D6E65
 ```
 
 #### desaturate
 
 ```typescript
-import { desaturate } from "farbraum";
+import { desaturate } from 'farbraum';
 
-desaturate("#2a9d8f", 0.3 /* 0 - 1 */); // #3B8C82
+desaturate('#2a9d8f', 0.3 /* 0 - 1 */); // #3B8C82
 ```
 
 #### fade
 
 ```typescript
-import { fade } from "farbraum";
+import { fade } from 'farbraum';
 
-fade("#2a9d8f", 0.3 /* 0 - 1 */); // #2A9D8FB2
+fade('#2a9d8f', 0.3 /* 0 - 1 */); // #2A9D8FB2
 ```
 
 #### lighten
 
 ```typescript
-import { lighten } from "farbraum";
+import { lighten } from 'farbraum';
 
-lighten("#2a9d8f", 0.3 /* 0 - 1 */); // #38CAB9
+lighten('#2a9d8f', 0.3 /* 0 - 1 */); // #38CAB9
 ```
 
 #### opaquer
 
 ```typescript
-import { opaquer } from "farbraum";
+import { opaquer } from 'farbraum';
 
-opaquer("#2a9d8f", 0.3 /* 0 - 1 */); // #2A9D8F
+opaquer('#2a9d8f', 0.3 /* 0 - 1 */); // #2A9D8F
 ```
 
 #### rotate
 
 ```typescript
-import { rotate } from "farbraum";
+import { rotate } from 'farbraum';
 
-rotate("#2a9d8f", 180 /* 0 - 360 */); // #9D2A37
+rotate('#2a9d8f', 180 /* 0 - 360 */); // #9D2A37
 ```
 
 #### saturate
 
 ```typescript
-import { saturate } from "farbraum";
+import { saturate } from 'farbraum';
 
-saturate("#2a9d8f", 0.3 /* 0 - 1 */); // #00C7B0
+saturate('#2a9d8f', 0.3 /* 0 - 1 */); // #00C7B0
 ```
 
 #### grayscale
 
 ```typescript
-import { grayscale } from "farbraum";
+import { grayscale } from 'farbraum';
 
-grayscale("#2a9d8f"); // #787878
+grayscale('#2a9d8f'); // #787878
 ```
 
 #### isDark
 
 ```typescript
-import { isDark } from "farbraum";
+import { isDark } from 'farbraum';
 
-isDark("#2a9d8f"); // false
+isDark('#2a9d8f'); // false
 ```
 
 #### luminosity
 
 ```typescript
-import { luminosity } from "farbraum";
+import { luminosity } from 'farbraum';
 
-luminosity("#2a9d8f"); // 0.265
+luminosity('#2a9d8f'); // 0.265
 ```
