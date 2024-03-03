@@ -28,7 +28,7 @@ export const colorOperation =
 
 export const colorProperty =
   <T>(operation: (input: ColorTranslator) => T) =>
-  (input: string): T | null => {
+  (input: ColorInput): T | null => {
     const color = transform(input);
 
     if (!color) {

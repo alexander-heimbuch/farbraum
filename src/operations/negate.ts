@@ -1,4 +1,4 @@
-import { ColorTranslator } from "colortranslator";
+import { ColorTranslator } from 'colortranslator';
 
 export function negate(input: ColorTranslator): ColorTranslator {
   return input

@@ -1,4 +1,4 @@
-import { ColorTranslator } from "colortranslator";
+import { ColorTranslator } from 'colortranslator';
 
 export function luminosity({ R, G, B }: ColorTranslator): number {
   const lum = (el: number): number => {

@@ -1,4 +1,4 @@
-import { ColorTranslator } from "colortranslator";
+import { ColorTranslator } from 'colortranslator';
 
 export function grayscale(input: ColorTranslator): ColorTranslator {
   // http://en.wikipedia.org/wiki/Grayscale#Converting_colour_to_grayscale

@@ -1,4 +1,4 @@
-import { ColorTranslator } from "colortranslator";
+import { ColorTranslator } from 'colortranslator';
 
 export function isDark({ R, G, B }: ColorTranslator): boolean {
   // YIQ equation from http://24ways.org/2010/calculating-color-contrast
@@ -11,9 +11,6 @@ export function darken(color: ColorTranslator, ratio: number): ColorTranslator {
   return color.setL(color.L - color.L * ratio);
 }
 
-export function lighten(
-  color: ColorTranslator,
-  ratio: number
-): ColorTranslator {
+export function lighten(color: ColorTranslator, ratio: number): ColorTranslator {
   return color.setL(color.L + color.L * ratio);
 }
